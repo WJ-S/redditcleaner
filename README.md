@@ -23,11 +23,17 @@ Setup
       password = r'<password>'
 
 Script Explanation
+
   Authentication: The script authenticates with Reddit using the provided credentials.
+  
   Delete Items Function: A function delete_items is defined to delete a batch of posts or comments. It prints the details of each deleted item.
+  
   Delete Posts: The script fetches the authenticated user's submissions (posts) in batches of 25 and deletes them.
+  
   Delete Comments: The script fetches the authenticated user's comments in batches of 25 and deletes them.
+  
   Rate Limiting: The script includes a sleep time (time.sleep(3)) between each batch deletion to avoid hitting Reddit's rate limits. Adjust this time if necessary.
+  
 
 Output
   The script will output the details of each deleted post and comment, and finally, it will print the total number of deleted posts and comments.
